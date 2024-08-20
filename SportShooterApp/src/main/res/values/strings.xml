@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DSP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Practice</string>
+    <string name="menu_gallery">Statistics </string>
+    <string name="menu_slideshow">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="reaction_shoot">Reflex</string>
+    <string name="reaction_shoot_description">Hit the target as fast as possible</string>
+    <string name="reaction_shoot_instruction">After red light disappears, green one while appear after random number of seconds. Hit the target as soon as green light appears</string>
+
+    <string name="five_shoots">5 Shoots</string>
+    <string name="five_shoots_description">Hit target 5 times as fast as possible</string>
+
+    <string name="line_training">Line</string>
+    <string name="line_training_description">Hit all targets in a row from left to right</string>
+
+    <string name="start">START</string>
+    <string name="server_client_id">569343921965-i6kkh1bec5hqbgleg81jmai07m55fell.apps.googleusercontent.com</string>
+</resources>

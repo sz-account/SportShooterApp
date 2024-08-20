@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ListView
+        android:id="@+id/deviceListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_item" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Search"
+        app:icon="@drawable/baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceListView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSingleTarget"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="64dp"
+        android:text="Single Target"
+        app:icon="@drawable/single_target_72dp"
+        app:iconGravity="textTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMultiTarget"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMultiTarget"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="64dp"
+        android:text="Multi Target"
+        app:icon="@drawable/multi_target_72dp"
+        app:iconGravity="textTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSingleTarget" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

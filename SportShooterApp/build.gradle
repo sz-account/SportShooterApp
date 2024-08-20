@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.dsp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.dsp"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    def room_version = "2.5.1"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    //noinspection GradleDependency
+    api 'com.google.android.material:material:1.9.0-rc01'
+    implementation 'com.github.weliem:blessed-android:2.4.2'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:3.+'
+    testImplementation "org.mockito:mockito-inline:+"
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'org.mockito:mockito-android:5.4.0'
+
+    // Includes the core logic for charts and other elements.
+    implementation "com.patrykandpatrick.vico:core:1.6.5"
+    // For the view system.
+    implementation "com.patrykandpatrick.vico:views:1.6.5"
+    // For `compose`. Creates a `ChartStyle` based on an M2 Material Theme.
+    implementation "com.patrykandpatrick.vico:compose-m2:1.6.5"
+
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    implementation 'com.google.android.gms:play-services-auth:20.5.0' // Google play services
+}
